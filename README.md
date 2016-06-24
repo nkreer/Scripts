@@ -1,6 +1,6 @@
 # Scripts
 
-This repository contails all scripts I personally use with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot.
+This repository contains all scripts I personally use with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
 
 | Script 				| Description			|
 |-------------------|-------------------|
@@ -8,6 +8,7 @@ This repository contails all scripts I personally use with my [Scripts-Plugin](h
 | gif.php				| Gif searches via Giphy |
 | spotify.php			| Get song previews |
 | fact.php			| Random fact from numbersapi.com |
+| joke.php			| Chuck Norris jokes via icndb.com |
 | coffee.php        | Makes the bot give coffee |
 | slap.php			| Slaps a user with something random |
 
