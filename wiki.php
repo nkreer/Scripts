@@ -30,6 +30,12 @@ if($data){
 	echo "Unexpected error.";
 }
 
+/**
+ * This code was taken from
+ * http://stackoverflow.com/questions/2104653/trim-text-to-340-chars/14896727#14896727
+ *
+ * All rights belong to it's respective author (Sebastian Hojas)
+ */
 function softTrim($text, $count, $wrapText='...'){
     if(strlen($text)>$count){
         preg_match('/^.{0,' . $count . '}(?:.*?)\b/siu', $text, $matches);
