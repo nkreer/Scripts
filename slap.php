@@ -5,7 +5,7 @@ $adjectives = explode("\n", file_get_contents("adjectives.txt"));
 
 $name = $argv[2];
 if(!empty($argv[3])){
-	$name = $argv[3];
+    $name = $argv[3];
 }
 
 $vowels = ["a", "e", "i", "o", "u"];

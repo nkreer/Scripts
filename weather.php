@@ -32,9 +32,9 @@ if($result === null or $result === false){
             }
         } else {
             $text = "Weather for ".$result["location"]["city"]." -".$result["location"]["region"].", ".$result["location"]["country"].
-                    " :: ".getTemperature($result["item"]["condition"]["temp"], $result["units"]["temperature"]);
+                " :: ".getTemperature($result["item"]["condition"]["temp"], $result["units"]["temperature"]);
             $text .= " :: ".$result["item"]["condition"]["text"]." :: Wind Speed: ".
-            $result["wind"]["speed"]." ".$result["units"]["speed"]." :: Humidity: ".$result["atmosphere"]["humidity"]."%";
+                $result["wind"]["speed"]." ".$result["units"]["speed"]." :: Humidity: ".$result["atmosphere"]["humidity"]."%";
         }
         echo $text;
     } else {
@@ -43,7 +43,7 @@ if($result === null or $result === false){
 }
 
 function getTemperature($temp, $unit){
-    switch($unit){
+    switch($unit) {
         case 'F':
             return $temp."°F / ".round(fahrenheitCelsius($temp), 1)."°C";
             break;

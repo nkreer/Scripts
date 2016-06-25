@@ -20,12 +20,12 @@ if(isset($result["list"][0])){
  *
  * All rights belong to it's respective author (Sebastian Hojas)
  */
-function softTrim($text, $count, $wrapText='...'){
-    if(strlen($text)>$count){
-        preg_match('/^.{0,' . $count . '}(?:.*?)\b/siu', $text, $matches);
+function softTrim($text, $count, $wrapText = '...'){
+    if(strlen($text) > $count){
+        preg_match('/^.{0,'.$count.'}(?:.*?)\b/siu', $text, $matches);
         $text = $matches[0];
-    }else{
+    } else {
         $wrapText = '';
     }
-    return $text . $wrapText;
+    return $text.$wrapText;
 }

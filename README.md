@@ -18,7 +18,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | weather.php			| Get weather or forecast for location | `weather <location> [-f days]` |
 | search.php			| Search DuckDuckGo Instant Answers | `search <query>` |
 | github.php			| Search GitHub repositories | `github <query>` |
-| calc.php			| Do calculations | `calc expression` |
+| calc.php			| Do calculations | `calc <expression>` |
 | coffee.php        | Makes the bot give coffee | `coffee [username]` |
 | slap.php			| Slap a user with something random | `slap [username]` |
 

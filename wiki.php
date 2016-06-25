@@ -7,27 +7,27 @@ $url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extract
 $data = json_decode(file_get_contents($url), true);
 
 if($data){
-	if(!empty($data["query"]["pages"])){
-		$articles = $data["query"]["pages"];
-		if(count($articles) >= 1){
-			foreach($articles as $article){
-				$title = $article["title"];
-				$text = str_replace("\n", " | ", str_replace("\n\n", "", softTrim($article["extract"], 280, " [...]")));
-				if(!empty($text)){
-					echo $title." :: ".$text." :: <https://en.wikipedia.org/wiki/".urlencode($title).">";
-				} else {
-					echo "No article found.";
-				}
-				break;
-			}
-		} else {
-			echo "Nothing found but emptyness.";
-		}
-	} else {
-		echo "Nothing found.";
-	}
+    if(!empty($data["query"]["pages"])){
+        $articles = $data["query"]["pages"];
+        if(count($articles) >= 1){
+            foreach($articles as $article){
+                $title = $article["title"];
+                $text = str_replace("\n", " | ", str_replace("\n\n", "", softTrim($article["extract"], 280, " [...]")));
+                if(!empty($text)){
+                    echo $title." :: ".$text." :: <https://en.wikipedia.org/wiki/".urlencode($title).">";
+                } else {
+                    echo "No article found.";
+                }
+                break;
+            }
+        } else {
+            echo "Nothing found but emptyness.";
+        }
+    } else {
+        echo "Nothing found.";
+    }
 } else {
-	echo "Unexpected error.";
+    echo "Unexpected error.";
 }
 
 /*
@@ -36,12 +36,12 @@ if($data){
  *
  * All rights belong to it's respective author (Sebastian Hojas)
  */
-function softTrim($text, $count, $wrapText='...'){
-    if(strlen($text)>$count){
-        preg_match('/^.{0,' . $count . '}(?:.*?)\b/siu', $text, $matches);
+function softTrim($text, $count, $wrapText = '...'){
+    if(strlen($text) > $count){
+        preg_match('/^.{0,'.$count.'}(?:.*?)\b/siu', $text, $matches);
         $text = $matches[0];
-    }else{
+    } else {
         $wrapText = '';
     }
-    return $text . $wrapText;
+    return $text.$wrapText;
 }

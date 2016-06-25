@@ -5,7 +5,7 @@ for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 $args = implode(" ", $argv);
 if(!empty($args)){
     echo str_replace("\n", " | ", queryDDG($args));
-}else{
+} else {
     echo "Missing query";
 }
 
@@ -16,12 +16,12 @@ function queryDDG($query){
         $result = json_decode($result, true);
         if(!empty($result["AbstractText"])){
             return softTrim($result["AbstractText"], 200).(!empty($result["AbstractURL"]) ? " <".$result["AbstractURL"].">" : "");
-        }elseif(!empty($result["AbstractURL"])){
+        } elseif(!empty($result["AbstractURL"])) {
             return $result["AbstractURL"];
-        }else{
+        } else {
             return "No information available. Be more precise or try searching yourself: https://duckduckgo.com/?q=".urlencode($query);
         }
-    }else{
+    } else {
         return "Can't reach DuckDuckGo.";
     }
 }
@@ -32,12 +32,12 @@ function queryDDG($query){
  *
  * All rights belong to it's respective author (Sebastian Hojas)
  */
-function softTrim($text, $count, $wrapText='...'){
-    if(strlen($text)>$count){
-        preg_match('/^.{0,' . $count . '}(?:.*?)\b/siu', $text, $matches);
+function softTrim($text, $count, $wrapText = '...'){
+    if(strlen($text) > $count){
+        preg_match('/^.{0,'.$count.'}(?:.*?)\b/siu', $text, $matches);
         $text = $matches[0];
-    }else{
+    } else {
         $wrapText = '';
     }
-    return $text . $wrapText;
+    return $text.$wrapText;
 }

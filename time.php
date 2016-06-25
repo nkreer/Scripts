@@ -5,7 +5,7 @@ if(!empty($timezone)){
     try {
         $time = new \DateTime(date("F d, Y H:i:s"));
         $time->setTimezone(new \DateTimeZone($timezone));
-    } catch(\Exception $e){
+    } catch(\Exception $e) {
         $time = new \DateTime(date("F d, Y H:i:s"));
     }
 } else {

@@ -20,7 +20,7 @@ if($times < 1 or $times > 15){
 }
 
 if(is_numeric($times) and is_numeric($min) and is_numeric($max) and is_numeric($add)){
-    for($i=1;$i<=$times;$i++){
+    for($i = 1; $i <= $times; $i++){
         $numbers[] = mt_rand($min, $max);
     }
     echo implode(", ", $numbers).($times > 1 ? " :: Average: ~".round((array_sum($numbers) / count($numbers)), 2)." :: Sum: ".array_sum($numbers).($add > 0 ? " + ".$add." = ".(array_sum($numbers) + $add) : "") : "");
