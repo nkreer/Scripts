@@ -9,6 +9,10 @@ This repository contains all scripts I personally use with my [Scripts-Plugin](h
 | spotify.php			| Get song previews |
 | fact.php			| Random fact from numbersapi.com |
 | joke.php			| Chuck Norris jokes via icndb.com |
+| distance.php      | Distance from one place to another |
+| time.php			| Time in a timezone |
+| realtime.php		| Convert a unix-timestamp to a real date |
+| random.php			| Generates random numbers
 | coffee.php        | Makes the bot give coffee |
 | slap.php			| Slaps a user with something random |
 
