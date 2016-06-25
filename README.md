@@ -1,6 +1,6 @@
 # Scripts
 
-This repository contains all scripts I personally use with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
+This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
 
 | Script 				| Description			|
 |-------------------|-------------------|
@@ -12,9 +12,13 @@ This repository contains all scripts I personally use with my [Scripts-Plugin](h
 | distance.php      | Distance from one place to another |
 | time.php			| Time in a timezone |
 | realtime.php		| Convert a unix-timestamp to a real date |
-| random.php			| Generates random numbers
+| random.php			| Generates random numbers |
+| define.php			| Get urban dictionary definitions |
+| weather.php			| Get weather for location |
+| search.php			| Search DuckDuckGo Instant Answers |
+| calc.php			| Do calculations
 | coffee.php        | Makes the bot give coffee |
-| slap.php			| Slaps a user with something random |
+| slap.php			| Slap a user with something random |
 
 If you wish to add your scripts to the list, feel free to do so via a pull request. I welcome every contribution.
 

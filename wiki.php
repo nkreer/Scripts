@@ -30,7 +30,7 @@ if($data){
 	echo "Unexpected error.";
 }
 
-/**
+/*
  * This code was taken from
  * http://stackoverflow.com/questions/2104653/trim-text-to-340-chars/14896727#14896727
  *
