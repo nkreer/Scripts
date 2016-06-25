@@ -21,6 +21,8 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | calc.php			| Do calculations | `calc <expression>` |
 | coffee.php        | Makes the bot give coffee | `coffee [username]` |
 | slap.php			| Slap a user with something random | `slap [username]` |
+| ping.php			| Simply replies with "Pong". | `ping` |
+| swag.php			| Makes a text go rainbow | `swag <text>` |
 
 If you wish to add your scripts to the list, feel free to do so via a pull request. I welcome every contribution.
 
