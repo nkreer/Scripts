@@ -8,6 +8,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | gif.php				| Gif searches via Giphy |
 | spotify.php			| Get song previews |
 | fact.php			| Random fact from numbersapi.com |
+| catfact.php			| Random cat fact from catfacts-api.appspot.com |
 | joke.php			| Chuck Norris jokes via icndb.com |
 | distance.php      | Distance from one place to another |
 | time.php			| Time in a timezone |
@@ -16,6 +17,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | define.php			| Get urban dictionary definitions |
 | weather.php			| Get weather for location |
 | search.php			| Search DuckDuckGo Instant Answers |
+| github.php			| Search GitHub repositories |
 | calc.php			| Do calculations
 | coffee.php        | Makes the bot give coffee |
 | slap.php			| Slap a user with something random |
