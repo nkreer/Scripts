@@ -26,6 +26,7 @@ if(strlen($args) <= 100 and strlen($args) >= 4){
                         
         if($char == " "){
             $output .= $char;
+            continue;
         }
         
         $output .= $rainbow[$rainbowKey].$char;

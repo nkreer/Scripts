@@ -23,6 +23,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | slap.php			| Slap a user with something random | `slap [username]` |
 | ping.php			| Simply replies with "Pong". | `ping` |
 | swag.php			| Makes a text go rainbow | `swag <text>` |
+| omdb.php			| Search the Open Movie Database | `omdb <query>` |
 
 If you wish to add your scripts to the list, feel free to do so via a pull request. I welcome every contribution.
 
