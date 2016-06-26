@@ -4,7 +4,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 
 | Script 				| Description			| Usage |
 |-------------------|-------------------|-------|
-| wiki.php			| Wikipedia searches| `wiki <query>` |
+| wiki.php			| Wikipedia searches| `wiki <query> [-l language]` |
 | gif.php				| Gif searches via Giphy | `gif <query>` |
 | spotify.php			| Get song previews | `spotify <query>`
 | fact.php			| Random fact from numbersapi.com | `fact [number]` |

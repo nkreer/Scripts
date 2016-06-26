@@ -1,9 +1,18 @@
 <?php
 
+include("src/IRC/ArgumentParser.php");
+use IRC\ArgumentParser;
+
 for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 
-$query = urlencode(implode(" ", $argv));
-$url = "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=".$query;
+$query = ArgumentParser::parse(implode(" ", $argv), ["language"]);
+
+if(empty($query["text"])){
+    exit("Search query missing.");
+}
+
+$lang = (empty($query["language"]) ? "en" : $query["language"]);
+$url = "https://".$lang.".wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=".urlencode($query["text"]);
 $data = json_decode(file_get_contents($url), true);
 
 if($data){
