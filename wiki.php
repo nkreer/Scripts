@@ -23,7 +23,7 @@ if($data){
                 $title = $article["title"];
                 $text = str_replace("\n", " | ", str_replace("\n\n", "", softTrim($article["extract"], 280, " [...]")));
                 if(!empty($text)){
-                    echo $title." :: ".$text." :: <https://en.wikipedia.org/wiki/".urlencode($title).">";
+                    echo $title." :: ".$text." :: <https://".$lang.".wikipedia.org/wiki/".urlencode($title).">";
                 } else {
                     echo "No article found.";
                 }
