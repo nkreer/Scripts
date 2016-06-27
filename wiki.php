@@ -1,7 +1,7 @@
 <?php
 
-include("src/IRC/ArgumentParser.php");
-use IRC\ArgumentParser;
+include("src/IRC/Utils/ArgumentParser.php");
+use IRC\Utils\ArgumentParser;
 
 for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 

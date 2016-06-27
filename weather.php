@@ -2,10 +2,10 @@
 
 for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 
-include_once("src/IRC/ArgumentParser.php");
+include_once("src/IRC/Utils/ArgumentParser.php");
 
 $place = implode(" ", $argv);
-$parse = IRC\ArgumentParser::parse($place, ["forecast"]);
+$parse = IRC\Utils\ArgumentParser::parse($place, ["forecast"]);
 $place = $parse["text"];
 
 $yql_query_url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22".urlencode($place)."%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
