@@ -27,6 +27,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | dwd.php | Weather warnings from Deutscher Wetterdienst | `dwd [place]` |
 | topic.php | Get a random hot topic | `topic` |
 | identity.php | Get a random identity | `identity` |
+| ip.php | Get the IP of a domain | `ip <domain>` |
 
 If you wish to add your scripts to the list, feel free to do so via a pull request. I welcome every contribution.
 

@@ -8,14 +8,15 @@ $data = str_ireplace(["warnWetter.loadWarnings(", ");"], ["", ""], file_get_cont
 $data = json_decode($data, true);
 
 if(empty($query)){
-	echo "Aktuell ".count($data["warnings"])." Wetterwarnungen";
+	echo "Aktuell ".count($data["warnings"])." Wetterwarnungen des deutschen Wetterdienstes für die Bundesrepublik Deutschland";
 } else {
 	$warn = [];
 	foreach($data["warnings"] as $warning){
 		if(stripos($warning[0]["regionName"], $query) !== false){
 			$warn["place"] = $warning[0]["regionName"];
-			$warn["warning"] = $warning[0]["headline"];
+			$warn["warning"] = $warning[0]["event"];
 			$warn["description"] = $warning[0]["description"];
+			$warn["instruction"] = $warning[0]["instruction"];
 			$warn["start"] = $warning[0]["start"] / 1000;
 			$warn["end"] = $warning[0]["end"] / 1000;#
 			break;
@@ -26,6 +27,7 @@ if(empty($query)){
 		echo $warn["warning"]." :: ";
 		echo date("d.m.y H:i:s", $warn["start"]).($warn["end"] ? " - ".date("d.m.y H:i:s", $warn["end"]) : "");
 		echo " :: ".$warn["description"];
+		echo (!empty($warn["instruction"]) ? " :: ".$warn["instruction"] : "");
 	} else {
 		echo "Aktuell liegen keine Wetterwarnungen für diesen Ort vor.";
 	}
