@@ -8,7 +8,7 @@ if(!empty($query)){
 		$info = $info["list"]["resources"][0]["resource"]["fields"];
 		echo $info["symbol"]." :: ";
 		echo $info["name"]." :: ";
-		echo $info["price"]." USD :: ";
+		echo round($info["price"], 2)." USD :: ";
 		echo "Volume: ".$info["volume"];
 		echo " (".$info["utctime"].")";
 	} else {

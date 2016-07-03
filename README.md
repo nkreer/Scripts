@@ -32,6 +32,8 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
 | image.php | Get a viral image from imgur | `image` |
 | cve.php | Get info on a CVE | `cve <CVE-ID>` |
+| qod.php | Get the Quote Of The Day from They Said So | `qod [category]` |
+| shorten.php | Shorten a URL using tinyurl.com | `shorten <url>` |
 
 If you wish to add your scripts to the list, feel free to do so via pull request. I welcome every contribution.
 
