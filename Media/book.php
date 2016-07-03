@@ -12,13 +12,31 @@ if($query){
 		echo $item["authors"][0]." :: ";
 		echo $item["publishedDate"]." :: ";
 		echo $item["pageCount"]." Pages :: ";
+		echo $item["industryIdentifiers"][0]["identifier"]." :: ";
 		echo "Category: ".$item["categories"][0];
 		if(!empty($item["averageRating"])){
 			echo " :: Rating: ".$item["averageRating"];
 		}
+		echo " :: ".softTrim($item["description"], 180);
 	} else {
 		echo "No results";
 	}
 } else {
 	echo "Search query missing";
+}
+
+/*
+ * This code was taken from
+ * http://stackoverflow.com/questions/2104653/trim-text-to-340-chars/14896727#14896727
+ *
+ * All rights belong to it's respective author (Sebastian Hojas)
+ */
+function softTrim($text, $count, $wrapText = '...'){
+    if(strlen($text) > $count){
+        preg_match('/^.{0,'.$count.'}(?:.*?)\b/siu', $text, $matches);
+        $text = $matches[0];
+    } else {
+        $wrapText = '';
+    }
+    return $text.$wrapText;
 }

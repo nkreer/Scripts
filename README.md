@@ -1,6 +1,11 @@
 # Scripts
 
+![Number of scripts](https://img.shields.io/badge/Scripts-31-brightgreen.svg)
+![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
+
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
+
+## List of Scripts
 
 | Script | Description | Usage |
 |--------------|-----------------------------------------------|-------------------------------------------|
@@ -41,3 +46,13 @@ If you wish to add your scripts to the list, feel free to do so via pull request
 ## License
 
 The code in this repository is released to the public domain.
+
+```
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
