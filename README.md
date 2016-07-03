@@ -30,6 +30,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | ip.php | Get the IP of a domain | `ip <domain>` |
 | book.php | Get information about a book from Google | `book <query>` |
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
+| image.php | Get a viral image from imgur | `image` |
 
 If you wish to add your scripts to the list, feel free to do so via pull request. I welcome every contribution.
 
