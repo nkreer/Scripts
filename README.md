@@ -31,6 +31,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | book.php | Get information about a book from Google | `book <query>` |
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
 | image.php | Get a viral image from imgur | `image` |
+| cve.php | Get info on a CVE | `cve <CVE-ID>` |
 
 If you wish to add your scripts to the list, feel free to do so via pull request. I welcome every contribution.
 
