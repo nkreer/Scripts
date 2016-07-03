@@ -1,6 +1,6 @@
 # Scripts
 
-This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
+This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
 
 | Script | Description | Usage |
 |--------------|-----------------------------------------------|-------------------------------------------|
@@ -28,10 +28,11 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | topic.php | Get a random hot topic | `topic` |
 | identity.php | Get a random identity | `identity` |
 | ip.php | Get the IP of a domain | `ip <domain>` |
-| book.php | Get information about a book | `book <query>` |
+| book.php | Get information about a book from Google | `book <query>` |
+| stock.php | Get stock information from Yahoo | `stock <symbol>` |
 
-If you wish to add your scripts to the list, feel free to do so via a pull request. I welcome every contribution.
+If you wish to add your scripts to the list, feel free to do so via pull request. I welcome every contribution.
 
 ## License
 
-This code is released to the public domain.
+The code in this repository is released to the public domain.
