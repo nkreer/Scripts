@@ -1,7 +1,7 @@
 <?php
 
-$rand1 = (empty($argv[3] !== false) ? $args[3] : 1);
-$rand2 = (empty($argv[4] !== false) ? $args[4] : 6);
+$rand1 = (!empty($argv[3]) ? $argv[3] : 1);
+$rand2 = (!empty($argv[4]) ? $argv[4] : 6);
 
 if($rand1 > $rand2){
     $min = $rand2;
@@ -11,8 +11,8 @@ if($rand1 > $rand2){
     $max = $rand2;
 }
 
-$times = (empty($args[3] !== false) ? $args[3] : 1);
-$add = (empty($args[4] !== false) ? $args[4] : 0);
+$times = (!empty($argv[5]) ? $argv[5] : 1);
+$add = (!empty($argv[6]) ? $argv[6] : 0);
 $numbers = [];
 
 if($times < 1 or $times > 15){
