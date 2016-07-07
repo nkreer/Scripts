@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-31-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-33-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -41,6 +41,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | shorten.php | Shorten a URL using tinyurl.com | `shorten <url>` |
 | paste.php | Paste to dpaste.com | `paste <text>` |
 | location.php | Get latitude and longitude of a given address | `location <address>` |
+| chefkoch.php | Search Chefkoch.de | `chefkoch <query>`|
 
 If you wish to add your scripts to the list, feel free to do so via pull request. I welcome every contribution.
 
