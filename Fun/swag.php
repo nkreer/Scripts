@@ -8,12 +8,12 @@ for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 $args = "I".implode(" ", $argv);
 if(strlen($args) <= 100 and strlen($args) >= 4){
     $rainbow = [1 => TextFormat::RED,
-                2 => TextFormat::ORANGE,
-                3 => TextFormat::YELLOW,
-                4 => TextFormat::GREEN,
-                5 => TextFormat::CYAN,
-                6 => TextFormat::BLUE,
-                7 => TextFormat::PURPLE];
+        2 => TextFormat::ORANGE,
+        3 => TextFormat::YELLOW,
+        4 => TextFormat::GREEN,
+        5 => TextFormat::CYAN,
+        6 => TextFormat::BLUE,
+        7 => TextFormat::PURPLE];
 
     $output = "";
     $rainbowKey = 1;
@@ -23,12 +23,12 @@ if(strlen($args) <= 100 and strlen($args) >= 4){
             $rainbowKey = 1;
         }
         $char = substr($args, $a, 1);
-                        
+
         if($char == " "){
             $output .= $char;
             continue;
         }
-        
+
         $output .= $rainbow[$rainbowKey].$char;
         $rainbowKey++;
     }
