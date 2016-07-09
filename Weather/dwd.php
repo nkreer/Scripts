@@ -16,7 +16,7 @@ if(empty($query)){
             $warn["place"] = $warning[0]["regionName"];
             $warn["warning"] = $warning[0]["event"];
             $warn["description"] = $warning[0]["description"];
-            $warn["instruction"] = $warning[0]["instruction"];
+            //$warn["instruction"] = $warning[0]["instruction"];
             $warn["start"] = $warning[0]["start"] / 1000;
             $warn["end"] = $warning[0]["end"] / 1000;#
             break;
@@ -27,7 +27,7 @@ if(empty($query)){
         echo $warn["warning"]." :: ";
         echo date("d.m.y H:i:s", $warn["start"]).($warn["end"] ? " - ".date("d.m.y H:i:s", $warn["end"]) : "");
         echo " :: ".$warn["description"];
-        echo(!empty($warn["instruction"]) ? " :: ".$warn["instruction"] : "");
+        //echo(!empty($warn["instruction"]) ? " :: ".$warn["instruction"] : "");
     } else {
         echo "Aktuell liegen keine Wetterwarnungen für diesen Ort vor.";
     }
