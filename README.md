@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-36-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-39-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -19,6 +19,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | qod.php | Get the Quote Of The Day from They Said So | `qod [category]` |
 | slap.php | Slap a user with something random | `slap [username]` |
 | swag.php | Makes a text go rainbow | `swag <text>` |
+| trivia.php | Get a random jeopary question and answer | `trivia` |
 
 ### Information
 
@@ -52,6 +53,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | Script | Description | Fish-Usage |
 |--------|-------------|------------|
 | calc.php | Do calculations | `calc <expression>` |
+| coin.php | Flip a coin | `coin` |
 | distance.php | Driving distance from one place to another | `distance A B` |
 | identity.php | Get a random identity | `identity` |
 | ip.php | DNS lookup | `ip <domain>` |
@@ -59,6 +61,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | random.php | Generates random numbers | `random <min> <max> [rolls] [add to sum]` |
 | realtime.php | Convert a unix-timestamp to a real date | `realtime <unix timestamp>` |
 | shorten.php | Shorten a URL using tinyurl.com | `shorten <url>` |
+| sort.php | Sort the input | `sort <input>` |
 | time.php | Time in a timezone | `time [timezone]` |
 
 ### Weather

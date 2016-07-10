@@ -8,7 +8,7 @@ $data = str_ireplace(["warnWetter.loadWarnings(", ");"], ["", ""], file_get_cont
 $data = json_decode($data, true);
 
 if(empty($query)){
-    echo "Aktuell ".count($data["warnings"])." Wetterwarnungen des deutschen Wetterdienstes für die Bundesrepublik Deutschland";
+    echo "Aktuell ".count($data["warnings"])." Wetterwarnungen des DWD";
 } else {
     $warn = [];
     foreach($data["warnings"] as $warning){
