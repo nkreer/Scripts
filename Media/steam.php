@@ -17,6 +17,8 @@ if($query){
 		}
 		echo implode(", ", $platforms)." :: ";
 		echo "http://store.steampowered.com/app/".$game["id"];
+	} else {
+		echo "Nothing found";
 	}
 } else {
 	echo "Search query missing";
