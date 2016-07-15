@@ -18,6 +18,7 @@ if(empty($query)){
         foreach($data[$info] as $warning){
             if(stripos($warning[0]["regionName"], $query) !== false){
                 $warn["place"] = $warning[0]["regionName"];
+                $warn["state"] = $warning[0]["stateShort"];
                 $warn["warning"] = $warning[0]["event"];
                 $warn["description"] = $warning[0]["description"];
                 $warn["start"] = $warning[0]["start"] / 1000;
@@ -26,7 +27,7 @@ if(empty($query)){
             }
         }
         if(!empty($warn)){
-            echo $warn["place"]." :: ";
+            echo $warn["place"].", ".$warn["state"]." :: ";
             echo $warn["warning"]." :: ";
             echo date("d.m.y H:i:s", $warn["start"]).($warn["end"] ? " - ".date("d.m.y H:i:s", $warn["end"]) : "");
             echo " :: ".$warn["description"];

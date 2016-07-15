@@ -56,8 +56,10 @@ This repository contains all scripts I personally use as commands with my [Scrip
 
 | Script | Description | Fish-Usage |
 |--------|-------------|------------|
+| base64.php | Decode and encode base64 | `base64 <method> <value>` |
 | calc.php | Do calculations | `calc <expression>` |
 | coin.php | Flip a coin | `coin` |
+| diff.php | Calculate time differences | `diff <then> [now]` |
 | distance.php | Driving distance from one place to another | `distance A B` |
 | identity.php | Get a random identity | `identity` |
 | ip.php | DNS lookup | `ip <domain>` |
@@ -66,6 +68,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | realtime.php | Convert a unix-timestamp to a real date | `realtime <unix timestamp>` |
 | shorten.php | Shorten a URL using tinyurl.com | `shorten <url>` |
 | sort.php | Sort the input | `sort <input>` |
+| string.php | Generate a random string | `string [length] [chars]` |
 | time.php | Time in a timezone | `time [timezone]` |
 
 ### Weather
