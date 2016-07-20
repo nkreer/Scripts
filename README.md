@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-43-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-47-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -31,6 +31,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | define.php | Get urban dictionary definitions | `define <query>` |
 | fact.php | Random fact from numbersapi.com | `fact [number]` |
 | github.php | Search GitHub repositories | `github <query>` |
+| kfz.php | Search german Kennzeichen | `kfz <query>` |
 | location.php | Get latitude and longitude of a given address | `location <address>` |
 | packagist.php | Search packagist | `packagist <query>`|
 | pt.php | Search the periodic table of elements | `pt <element/symbol/number>` |
