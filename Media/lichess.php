@@ -8,6 +8,7 @@ if(!empty($argv[3])){
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	$data = curl_exec($ch);
 	if(!empty($data)){
+		curl_close($ch);
 		$data = json_decode($data, true);
 		echo "Game #".$data["id"]." :: ";
 		echo "Status: ".ucfirst($data["status"])." :: ";

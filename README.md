@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-48-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-50-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -19,7 +19,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | qod.php | Get the Quote Of The Day from They Said So | `qod [category]` |
 | slap.php | Slap a user with something random | `slap [username]` |
 | swag.php | Makes a text go rainbow | `swag <text>` |
-| trivia.php | Get a random jeopary question and answer | `trivia` |
+| trivia.php | Get a random jeopardy question and answer | `trivia` |
 
 ### Information
 
@@ -32,10 +32,11 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | fact.php | Random fact from numbersapi.com | `fact [number]` |
 | github.php | Search GitHub repositories | `github <query>` |
 | kfz.php | Search german Kennzeichen | `kfz <query>` |
+| language.php | Search languages and their ISO 639-1 codes | `language <query>` |
 | location.php | Get latitude and longitude of a given address | `location <address>` |
 | packagist.php | Search packagist | `packagist <query>`|
 | pt.php | Search the periodic table of elements | `pt <element/symbol/number>` |
-| safe.php | Check is a website is suspicous | `safe <url>` |
+| safe.php | Check whether a website is suspicous or not (Google Safebrowsing) | `safe <url>` |
 | search.php | Search DuckDuckGo Instant Answers | `search <query>` |
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
 | wiki.php | Wikipedia searches | `wiki <query> [-l language]` |
@@ -63,6 +64,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | coin.php | Flip a coin | `coin` |
 | diff.php | Calculate time differences | `diff <then> [now]` |
 | distance.php | Driving distance from one place to another | `distance A B` |
+| down.php | Check whether a website is down or not | `down <url>` |
 | identity.php | Get a random identity | `identity` |
 | ip.php | DNS lookup | `ip <domain>` |
 | paste.php | Paste to dpaste.com | `paste <text>` |
