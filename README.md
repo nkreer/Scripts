@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-52-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-53-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -64,6 +64,7 @@ The scripts in this category need to be customized with private data before they
 | Script | Description | Dependencies | Fish-Usage |
 |--------|-------------|--------------|------------|
 | yt.php | Search YouTube | YouTube Data API v3 Key | `yt <query>` |
+| google.php | Search a Google CSE | Google CSE API Key and CSE ID | `google <query>` |
 
 ### Utilities
 
