@@ -10,7 +10,7 @@ if(!empty($argv[3])){
 	if(!empty($data)){
 		curl_close($ch);
 		$data = json_decode($data, true);
-		echo "Game #".$data["id"]." :: ";
+		echo "https://lichess.org/".$data["id"]." :: ";
 		echo "Status: ".ucfirst($data["status"])." :: ";
 		echo "Variant: ".ucfirst($data["variant"])." :: ";
 		echo "Rated: ".(!empty($data["rated"]) ? "Yes" : "No")." :: ";

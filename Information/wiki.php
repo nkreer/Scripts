@@ -23,17 +23,13 @@ if($data){
                 $title = $article["title"];
                 $text = str_replace("\n", " | ", str_replace("\n\n", "", softTrim($article["extract"], 280, " [...]")));
                 if(!empty($text)){
-                    echo $title." :: ".$text." :: https://".$lang.".wikipedia.org/wiki/".urlencode($title);
+                    echo $title." :: ".$text." :: https://".$lang.".wikipedia.org/wiki/".urlencode(str_replace(" ", "_", $title)); // Hack required. Stupid PHP.
                 } else {
                     echo "No article found.";
                 }
                 break;
             }
-        } else {
-            echo "Nothing found but emptyness.";
         }
-    } else {
-        echo "Nothing found.";
     }
 } else {
     echo "Unexpected error.";

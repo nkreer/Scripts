@@ -59,7 +59,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 
 ### Private
 
-The scripts in this category have dependencies.
+The scripts in this category need to be customized with private data before they can be used.
 
 | Script | Description | Dependencies | Fish-Usage |
 |--------|-------------|--------------|------------|
