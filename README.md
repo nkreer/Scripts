@@ -21,6 +21,7 @@ From time to time, some of these scripts may break as most of them rely on exter
 | joke.php | Chuck Norris jokes via icndb.com | `joke` |
 | ping.php | Simply replies with "Pong". | `ping` |
 | qod.php | Get the Quote Of The Day from They Said So | `qod [category]` |
+| rps.php | Rock Paper Scissors | `rps <r/p/s>` |
 | slap.php | Slap a user with something random | `slap [username]` |
 | swag.php | Makes a text go rainbow | `swag <text>` |
 | trivia.php | Get a random jeopardy question and answer | `trivia` |
@@ -51,6 +52,7 @@ From time to time, some of these scripts may break as most of them rely on exter
 | Script | Description | Fish-Usage |
 |--------|-------------|------------|
 | book.php | Get information about a book from Google | `book <query>` |
+| cat.php | Get a random picture of a cat | `cat` |
 | itunes.php | Search the iTunes Store | `itunes <query> [-c country]` |
 | lichess.php | Get information on a lichess-game | `lichess <game-id>` |
 | mcuuid.php | Get Minecraft UUIDs | `mcuuid <nick>` |

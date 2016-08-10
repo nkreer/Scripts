@@ -10,9 +10,7 @@ if(isset($result["list"][0])){
     $data = str_replace("\n", " | ", $result["definition"]);
     $link = " [...] <".$result["permalink"].">";
     $definition = $result["word"]." :: ".softTrim($data, 250, $link);
-    if($result["thumbs_up"] !== 0 or $result["thumbs_down"] !== 0){
-            $definition .= " :: Rating: ".round($result["thumbs_down"] / $result["thumbs_up"] * 10)."% positive";
-    }
+    $definition .= " :: Rating: ".$result["thumbs_up"].":".$result["thumbs_down"];
     echo $definition;
 } else {
     echo "Nothing found!";
