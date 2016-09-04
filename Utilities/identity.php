@@ -1,6 +1,6 @@
 <?php
 
-$user = file_get_contents("https://randomuser.me/api/");
+$user = @file_get_contents("https://randomuser.me/api/");
 
 if($user){
     $user = json_decode($user, true);

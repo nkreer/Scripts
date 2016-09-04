@@ -13,7 +13,7 @@ if(!empty($info["country"])){
 }
 
 if($query){
-    $data = json_decode(file_get_contents("https://itunes.apple.com/search?limit=1&country=".$country."&term=".$query), true);
+    $data = json_decode(@file_get_contents("https://itunes.apple.com/search?limit=1&country=".$country."&term=".$query), true);
     if(!empty($data["results"][0])){
         $result = $data["results"][0];
         echo $result["kind"]." :: ";

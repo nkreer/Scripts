@@ -3,7 +3,7 @@
 $query = urlencode($argv[3]);
 
 if($query){
-    $data = json_decode(file_get_contents("http://cve.circl.lu/api/cve/".$query), true);
+    $data = json_decode(@file_get_contents("http://cve.circl.lu/api/cve/".$query), true);
     if(!empty($data)){
         echo $data["vulnerable_configuration"][0]["title"]." :: ";
         if(!empty($data["access"])){

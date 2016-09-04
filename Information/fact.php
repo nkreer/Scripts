@@ -6,7 +6,7 @@ if(!empty($argv[3]) and is_numeric($argv[3])){
     $number = "random";
 }
 
-$result = file_get_contents("http://numbersapi.com/".$number."/trivia");
+$result = @file_get_contents("http://numbersapi.com/".$number."/trivia");
 
 if($result){
     echo $result;

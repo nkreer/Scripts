@@ -2,7 +2,7 @@
 
 if(!empty($argv[3])){
 	$nick = urlencode($argv[3]);
-	$result = json_decode(file_get_contents("https://api.mojang.com/users/profiles/minecraft/".$nick), true);
+	$result = json_decode(@file_get_contents("https://api.mojang.com/users/profiles/minecraft/".$nick), true);
 	if(!empty($result["id"])){
 		echo $result["name"]." :: ".$result["id"];
 	} else {

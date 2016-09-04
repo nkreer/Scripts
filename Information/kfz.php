@@ -2,7 +2,7 @@
 
 if(!empty($argv[3])){
 	$query = strtoupper($argv[3]);
-	$data = json_decode(file_get_contents("https://raw.githubusercontent.com/HTW-Webtech/KFZ-Kennzeichen/master/data/kennzeichen.json"), true);
+	$data = json_decode(@file_get_contents("https://raw.githubusercontent.com/HTW-Webtech/KFZ-Kennzeichen/master/data/kennzeichen.json"), true);
 	if(isset($data[$query])){
 		echo $query." :: ".$data[$query];
 	} else {

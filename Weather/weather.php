@@ -14,7 +14,7 @@ if(empty($place)){
 
 $yql_query_url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22".urlencode($place)."%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys";
 
-$result = file_get_contents($yql_query_url);
+$result = @file_get_contents($yql_query_url);
 
 if($result === null or $result === false){
     echo "Can't reach Yahoo Weather";

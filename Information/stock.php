@@ -3,7 +3,7 @@
 $query = urlencode($argv[3]);
 
 if(!empty($query)){
-    $info = json_decode(file_get_contents("https://finance.yahoo.com/webservice/v1/symbols/".$query."/quote?format=json"), true);
+    $info = json_decode(@file_get_contents("https://finance.yahoo.com/webservice/v1/symbols/".$query."/quote?format=json"), true);
     if(!empty($info["list"]["resources"][0])){
         $info = $info["list"]["resources"][0]["resource"]["fields"];
         echo $info["symbol"]." :: ";

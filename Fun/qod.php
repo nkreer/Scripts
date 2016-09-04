@@ -1,7 +1,7 @@
 <?php
 
 $category = (!empty($argv[3]) ? urlencode($argv[3]) : "inspire");
-$quote = json_decode(file_get_contents("http://quotes.rest/qod.json?category=".$category), true);
+$quote = json_decode(@file_get_contents("http://quotes.rest/qod.json?category=".$category), true);
 
 if($quote){
     $quote = $quote["contents"]["quotes"][0];

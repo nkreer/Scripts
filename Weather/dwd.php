@@ -10,7 +10,7 @@ $check = ["warnings", "vorabInformation"];
 $query = implode(" ", $argv);
 $parse = ArgumentParser::parse($query, ["warning"]);
 
-$data = str_ireplace(["warnWetter.loadWarnings(", ");"], ["", ""], file_get_contents("http://www.dwd.de//DWD/warnungen/warnapp_landkreise/json/warnings.json"));
+$data = str_ireplace(["warnWetter.loadWarnings(", ");"], ["", ""], @file_get_contents("http://www.dwd.de//DWD/warnungen/warnapp_landkreise/json/warnings.json"));
 $data = json_decode($data, true);
 
 if(empty($parse["text"])){

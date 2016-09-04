@@ -8,7 +8,7 @@ if(!empty($query)){
     $url = "https://api.github.com/search/repositories?q=".$query;
     $options = ['http' => ['user_agent' => "Fish/1.0"]];
     $context = stream_context_create($options);
-    $result = json_decode(file_get_contents($url, false, $context), true);
+    $result = json_decode(@file_get_contents($url, false, $context), true);
     if($result){
         if(!empty($result["items"][0])){
             $result = $result["items"][0];

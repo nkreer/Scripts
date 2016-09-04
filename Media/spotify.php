@@ -6,7 +6,7 @@ $query = urlencode(implode(" ", $argv));
 
 if(!empty($query)){
     $url = "https://api.spotify.com/v1/search?q=".$query."&type=track&limit=1";
-    $data = json_decode(file_get_contents($url), true);
+    $data = json_decode(@file_get_contents($url), true);
     if($data){
         if(!empty($data["tracks"]["items"])){
             $data = $data["tracks"]["items"][0];

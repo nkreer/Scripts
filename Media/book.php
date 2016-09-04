@@ -4,7 +4,7 @@ for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 $query = urlencode(implode(" ", $argv));
 
 if($query){
-    $data = file_get_contents("https://www.googleapis.com/books/v1/volumes?q=".$query);
+    $data = @file_get_contents("https://www.googleapis.com/books/v1/volumes?q=".$query);
     $data = json_decode($data, true);
     if(!empty($data["items"][0])){
         $item = $data["items"][0]["volumeInfo"];

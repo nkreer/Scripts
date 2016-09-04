@@ -8,7 +8,7 @@ if(empty($query)){
 }
 
 $url = "https://www.omdbapi.com/?t=".$query."&plot=short&r=json&v=1";
-$data = json_decode(file_get_contents($url), true);
+$data = json_decode(@file_get_contents($url), true);
 
 if($data){
     if($data["Response"] !== "False"){

@@ -11,7 +11,7 @@ if(!empty($args)){
 
 function queryDDG($query){
     $url = "http://api.duckduckgo.com/?format=json&q=".urlencode($query);
-    $result = file_get_contents($url);
+    $result = @file_get_contents($url);
     if($result !== false and $result !== null){
         $result = json_decode($result, true);
         if(!empty($result["AbstractText"])){

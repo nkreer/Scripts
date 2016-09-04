@@ -13,7 +13,7 @@ if(empty($query["text"])){
 
 $lang = (empty($query["language"]) ? "en" : $query["language"]);
 $url = "https://".$lang.".wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=".urlencode($query["text"]);
-$data = json_decode(file_get_contents($url), true);
+$data = json_decode(@file_get_contents($url), true);
 
 if($data){
     if(!empty($data["query"]["pages"])){

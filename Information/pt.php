@@ -2,7 +2,7 @@
 
 if($argv[3]){
 	$search = strtolower($argv[3]);
-	$data = json_decode(file_get_contents("https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json"), true);
+	$data = json_decode(@file_get_contents("https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json"), true);
 	$found = false;
 	foreach($data as $element => $info){
 		if($search === strtolower($element) or strtolower($info["symbol"]) === $search or $search === $info["number"]){

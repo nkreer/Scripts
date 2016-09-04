@@ -3,7 +3,7 @@
 for($i = 0; $i <= 2; $i++) unset($argv[$i]);
 
 $word = str_replace("&", "", implode("-", $argv));
-$result = json_decode(file_get_contents("http://api.urbandictionary.com/v0/define?term=".$word), true);
+$result = json_decode(@file_get_contents("http://api.urbandictionary.com/v0/define?term=".$word), true);
 
 if(isset($result["list"][0])){
     $result = $result["list"][0];

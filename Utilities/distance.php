@@ -17,7 +17,7 @@ if(!$one or !$two){
 
 function getDistance($one, $two, $mode = "driving"){
     $link = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=".urlencode($one)."&destinations=".urlencode($two)."&language=en-GB&sensor=false&mode=".urlencode($mode);
-    $file = file_get_contents($link);
+    $file = @file_get_contents($link);
     file_put_contents("test.json", $file);
     if($file !== null and $file !== false){
         $file = json_decode($file, true);

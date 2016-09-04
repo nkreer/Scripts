@@ -1,6 +1,6 @@
 <?php
 
-$joke = json_decode(file_get_contents("http://api.icndb.com/jokes/random"), true);
+$joke = json_decode(@file_get_contents("http://api.icndb.com/jokes/random"), true);
 
 if($joke){
     if($joke["type"] === "success"){

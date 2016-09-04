@@ -2,7 +2,7 @@
 
 if(!empty($argv[3]) and !empty($argv[4])){
 	if(is_numeric($argv[3]) and is_numeric($argv[4])){
-		$episode = json_decode(file_get_contents("https://ponyapi.apps.xeserv.us/season/".urlencode($argv[3])."/episode/".urlencode($argv[4])), true);
+		$episode = json_decode(@file_get_contents("https://ponyapi.apps.xeserv.us/season/".urlencode($argv[3])."/episode/".urlencode($argv[4])), true);
 		if(empty($episode["error"])){
 			$episode = $episode["episode"];
 			echo $episode["name"]." :: ";
