@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-56-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-57-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -85,6 +85,7 @@ The scripts in this category need to be customized with private data before they
 | down.php | Check whether a website is down or not | `down <url>` |
 | identity.php | Get a random identity | `identity` |
 | ip.php | DNS lookup | `ip <domain>` |
+| lt.php | Use the languagetool.org service | `lt <language/auto> <text>` | 
 | paste.php | Paste to dpaste.com | `paste <text>` |
 | random.php | Generates random numbers | `random <min> <max> [rolls] [add to sum]` |
 | realtime.php | Convert a unix-timestamp to a real date | `realtime <unix timestamp>` |
