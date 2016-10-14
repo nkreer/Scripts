@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-57-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-58-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -53,6 +53,7 @@ From time to time, some of these scripts may break as most of them rely on exter
 |--------|-------------|------------|
 | book.php | Get information about a book from Google | `book <query>` |
 | cat.php | Get a random picture of a cat | `cat` |
+| image.php | Search Wikimedia Commons | `image <query>` |
 | itunes.php | Search the iTunes Store | `itunes <query> [-c country]` |
 | lichess.php | Get information on a lichess-game | `lichess <game-id>` |
 | mcuuid.php | Get Minecraft UUIDs | `mcuuid <nick>` |
