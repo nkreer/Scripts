@@ -1,13 +1,9 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-58-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-59-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
-
-## Test
-
-From time to time, some of these scripts may break as most of them rely on external services. The `test.php` script in this directory can be used to check all scripts for proper functionality at once.
 
 ## List of Scripts
 
@@ -25,6 +21,7 @@ From time to time, some of these scripts may break as most of them rely on exter
 | slap.php | Slap a user with something random | `slap [username]` |
 | swag.php | Makes a text go rainbow | `swag <text>` |
 | trivia.php | Get a random jeopardy question and answer | `trivia` |
+| trump.php | Get a random Donald Trump quote | `trump` |
 
 ### Information
 
