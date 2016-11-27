@@ -15,7 +15,7 @@ if($argv[3]){
 		echo $diff->m." months, ";
 		echo $diff->d." days, ";
 		echo $diff->h." hours, ";
-		echo $diff->m." minutes and ";
+		echo $diff->i." minutes and ";
 		echo $diff->s." seconds in the ";
 		echo ($diff->invert ? "past" : "future");
 		echo " (Total: ".$diff->days." days)";
