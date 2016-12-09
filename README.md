@@ -1,9 +1,9 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-62-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-63-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
-This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
+This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
 
 ## List of Scripts
 
@@ -41,7 +41,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | location.php | Get latitude and longitude of a given address | `location <address>` |
 | packagist.php | Search packagist | `packagist <query>`|
 | pt.php | Search the periodic table of elements | `pt <element/symbol/number>` |
-| safe.php | Check whether a website is suspicous or not (Google Safebrowsing) | `safe <url>` |
+| safe.php | Check whether a website has suspicious content (Google Safebrowsing) | `safe <url>` |
 | search.php | Search DuckDuckGo Instant Answers | `search <query>` |
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
 | wiki.php | Wikipedia searches | `wiki <query> [-l language]` |
@@ -67,12 +67,13 @@ This repository contains all scripts I personally use as commands with my [Scrip
 
 ### Private
 
-The scripts in this category need to be customized with private data before they can be used.
+The scripts in this category need to be changed with private data (api keys, etc.) before they can be used.
 
 | Script | Description | Dependencies | Fish-Usage |
 |--------|-------------|--------------|------------|
-| yt.php | Search YouTube | YouTube Data API v3 Key | `yt <query>` |
 | google.php | Search a Google CSE | Google CSE API Key and CSE ID | `google <query>` |
+| news.php | Get the latest news headlines | newsapi.org API key | `news [source] [article]` |
+| yt.php | Search YouTube | YouTube Data API v3 Key | `yt <query>` |
 
 ### Utilities
 
