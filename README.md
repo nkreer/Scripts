@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-60-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-61-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -56,6 +56,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | lichess.php | Get information on a lichess-game | `lichess <game-id>` |
 | mcuuid.php | Get Minecraft UUIDs | `mcuuid <nick>` |
 | mlp.php | Get the title and air-date of a My Little Pony - Friendship is Magic episode | `mlp <season> <episode>` |
+| nasa.php | Get NASA's Astronomy Picture Of The Day | `nasa` |
 | omdb.php | Search the Open Movie Database | `omdb <query>` |
 | spotify.php | Get song previews | `spotify <query>` |
 | steam.php | Search the steam store | `steam <query>` |
