@@ -17,6 +17,7 @@ if($data){
 			echo $article["publishedAt"];
 			echo " :: ".$article["title"];
 			echo " :: ".$article["url"];
+			echo " :: Powered by NewsAPI.org";
 		}
 	} else {
 		echo "Please check that your provided news source is supported.";
