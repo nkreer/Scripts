@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-61-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-62-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line. Just fill `$argv[1]` and `$argv[2]` with something random.
@@ -19,6 +19,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | postillon.php | Get a random Der Postillon newsticker | `postillon` |
 | qod.php | Get the Quote Of The Day from They Said So | `qod [category]` |
 | rps.php | Rock Paper Scissors | `rps <r/p/s>` |
+| russianroulette.php | Russian Roulette | `russianroulette` |
 | slap.php | Slap a user with something random | `slap [username]` |
 | swag.php | Makes a text go rainbow | `swag <text>` |
 | trivia.php | Get a random jeopardy question and answer | `trivia` |
