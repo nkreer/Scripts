@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-63-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-65-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -44,6 +44,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | safe.php | Check whether a website has suspicious content (Google Safebrowsing) | `safe <url>` |
 | search.php | Search DuckDuckGo Instant Answers | `search <query>` |
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
+| telegraph | Get article information from telegra.ph | `telegraph <path>` |
 | wiki.php | Wikipedia searches | `wiki <query> [-l language]` |
 
 ### Media
@@ -95,6 +96,7 @@ The scripts in this category need to be changed with private data (api keys, etc
 | sort.php | Sort the input | `sort <input>` |
 | string.php | Generate a random string | `string [length] [chars]` |
 | time.php | Time in a timezone | `time [timezone]` |
+| translate.php | Translate any given text to English using transltr.org | `translate <text>` |
 
 ### Weather
 
