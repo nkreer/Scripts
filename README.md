@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-65-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-66-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -33,6 +33,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | chefkoch.php | Search Chefkoch.de | `chefkoch <query>`|
 | cve.php | Get info on a CVE | `cve <CVE-ID>` |
 | define.php | Get urban dictionary definitions | `define <query>` |
+| dict.php | Translate a word from one language to another and show a definition using glosbe.com | `dict <source Language> <target Language> <query>` |
 | fact.php | Random fact from numbersapi.com | `fact [number]` |
 | github.php | Search GitHub repositories | `github <query>` |
 | haveibeenpwned.php | Check haveibeenpwned.com | `haveibeenpwned <username/email>` |
