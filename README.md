@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-66-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-67-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -24,6 +24,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | swag.php | Makes a text go rainbow | `swag <text>` |
 | trivia.php | Get a random jeopardy question and answer | `trivia` |
 | trump.php | Get a random Donald Trump quote | `trump` |
+| xkcd.php | Get the latest xkcd.com comic | `xkcd` |
 
 ### Information
 
