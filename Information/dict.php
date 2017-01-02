@@ -8,7 +8,6 @@ if(!empty($argv[3]) and !empty($argv[4]) and !empty($argv[5])){
 	$data = @file_get_contents("https://glosbe.com/gapi/translate?from=".$fromLang."&dest=".$toLang."&format=json&phrase=".$query);
 	if($data){
 		$data = json_decode($data, true);
-		print_r($data);
 		if(!empty($data["tuc"])){
 			echo $data["tuc"][0]["phrase"]["text"]." :: ";
 			echo $data["tuc"][0]["meanings"][0]["text"];
