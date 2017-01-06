@@ -24,7 +24,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | swag.php | Makes a text go rainbow | `swag <text>` |
 | trivia.php | Get a random jeopardy question and answer | `trivia` |
 | trump.php | Get a random Donald Trump quote | `trump` |
-| xkcd.php | Get the latest xkcd.com comic | `xkcd` |
+| xkcd.php | Get the latest xkcd.com comic | `xkcd <comic>` |
 
 ### Information
 
