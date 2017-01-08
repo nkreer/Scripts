@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-67-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-70-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -24,7 +24,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | swag.php | Makes a text go rainbow | `swag <text>` |
 | trivia.php | Get a random jeopardy question and answer | `trivia` |
 | trump.php | Get a random Donald Trump quote | `trump` |
-| xkcd.php | Get the latest xkcd.com comic | `xkcd <comic>` |
+| xkcd.php | Get xkcd.com comics | `xkcd [comic]` |
 
 ### Information
 
@@ -47,7 +47,9 @@ This repository contains all scripts I personally use as commands with my [Scrip
 | search.php | Search DuckDuckGo Instant Answers | `search <query>` |
 | stock.php | Get stock information from Yahoo | `stock <symbol>` |
 | telegraph | Get article information from telegra.ph | `telegraph <path>` |
-| wiki.php | Wikipedia searches | `wiki <query> [-l language]` |
+| wiki.php | Search for and show a wikipedia article | `wiki <query> [-l language]` |
+| wikisearch.php | Search wikipedia | `wikisearch <query> [-l language]` |
+| wikistats.php | Returns wikipedia statistics | `wikistats [language]` |
 
 ### Media
 
@@ -93,6 +95,7 @@ The scripts in this category need to be changed with private data (api keys, etc
 | lt.php | Use the languagetool.org service | `lt <language/auto> <text>` | 
 | paste.php | Paste to dpaste.com | `paste <text>` |
 | random.php | Generates random numbers | `random <min> <max> [rolls] [add to sum]` |
+| randomwiki.php | Returns a random wikipedia article | `randomwiki` |
 | realtime.php | Convert a unix-timestamp to a real date | `realtime <unix timestamp>` |
 | shorten.php | Shorten a URL using tinyurl.com | `shorten <url>` |
 | sort.php | Sort the input | `sort <input>` |
