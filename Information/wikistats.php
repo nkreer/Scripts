@@ -5,7 +5,6 @@ if(!empty($argv[3]) and strlen($argv[3]) === 2){
 } else {
 	$language = "en";
 }
-echo $language."\n";
 $result = @file_get_contents("https://".$language.".wikipedia.org/w/api.php?action=query&meta=siteinfo&siprop=statistics&format=json");
 if($result){
 	$result = json_decode($result, true)["query"]["statistics"];
