@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-74-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-76-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -85,7 +85,9 @@ The scripts in this category need to be changed with private data (api keys, etc
 | Script | Description | Fish-Usage |
 |--------|-------------|------------|
 | celsius.php | Convert degrees Fahrenheit to Celsius | `celsius <fahrenheit>` |
+| centimetres.php | Convert feet and inches to centimetres | `centimetres <feet> <inches>` |
 | fahrenheit.php | Convert degrees Celsius to Fahrenheit | `fahrenheit <celsius>` |
+| feet.php | Convert centimetres to feet and inches | `feet <centimetres>` |
 | kilometres.php | Convert miles to kilometres | `kilometres <miles>` |
 | miles.php | Convert kilometres to miles | `miles <kilometres>` |
 
