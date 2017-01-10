@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-70-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-72-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -79,6 +79,13 @@ The scripts in this category need to be changed with private data (api keys, etc
 | google.php | Search a Google CSE | Google CSE API Key and CSE ID | `google <query>` |
 | news.php | Get the latest news headlines | newsapi.org API key | `news [source] [article]` |
 | yt.php | Search YouTube | YouTube Data API v3 Key | `yt <query>` |
+
+### Units
+
+| Script | Description | Fish-Usage |
+|--------|-------------|------------|
+| celsius.php | Convert degrees Fahrenheit to Celsius | `celsius <fahrenheit>` |
+| fahrenheit.php | Convert degrees Celsius to Fahrenheit | `fahrenheit <celsius>` |
 
 ### Utilities
 
