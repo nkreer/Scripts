@@ -1,6 +1,6 @@
 # Scripts
 
-![Number of scripts](https://img.shields.io/badge/Scripts-77-brightgreen.svg)
+![Number of scripts](https://img.shields.io/badge/Scripts-80-brightgreen.svg)
 ![License](https://img.shields.io/badge/License-Public%20Domain-blue.svg)
 
 This repository contains all scripts I personally use as commands with my [Scripts-Plugin](https://github.com/nkreer/Fish-Scripts) for the Fish IRC-Bot and another private project, but they can be used like any other PHP script on the command line.
@@ -11,6 +11,7 @@ This repository contains all scripts I personally use as commands with my [Scrip
 
 | Script | Description | Fish-Usage |
 |--------|-------------|------------|
+| 8ball.php | The Magic 8-Ball | `8ball` |
 | coffee.php | Makes the bot give coffee | `coffee [username]` |
 | gif.php | Gif searches via Giphy | `gif <query>` |
 | image.php | Get a viral image from imgur | `image` |
@@ -89,8 +90,10 @@ The scripts in this category need to be changed with private data (api keys, etc
 | exchange.php | Get the current exchange rate of two currencies | `exchange <symbol> [base]` |
 | fahrenheit.php | Convert degrees Celsius to Fahrenheit | `fahrenheit <celsius>` |
 | feet.php | Convert centimetres to feet and inches | `feet <centimetres>` |
+| kilograms.php | Convert pounds to kilograms | `kilograms <pounds>` |
 | kilometres.php | Convert miles to kilometres | `kilometres <miles>` |
 | miles.php | Convert kilometres to miles | `miles <kilometres>` |
+| pounds.php | Convert kilograms to pounds | `pounds <kilograms>` |
 
 ### Utilities
 
